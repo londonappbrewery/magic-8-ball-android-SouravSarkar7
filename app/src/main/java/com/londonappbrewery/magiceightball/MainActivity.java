@@ -9,12 +9,13 @@ import android.widget.ImageView;
 import java.util.Random;
 
 public class MainActivity extends AppCompatActivity {
+    final ImageView ballDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        final ImageView ballDisplay =(ImageView)findViewById(R.id.image_eightBall);
+       ballDisplay =(ImageView)findViewById(R.id.image_eightBall);
         final int[] ballArray=new int[]{
                 R.drawable.ball1,
                 R.drawable.ball2,
